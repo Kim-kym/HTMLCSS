@@ -1,0 +1,22 @@
+* {
+    font-family: 'Malgun Gothic', 'Dotum';
+    font-size: 17px;
+}
+
+h1 {
+    font-family: 'GungsuhChe', 'Dotum';
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.history p {
+    text-indent: 30px;   
+}
+
+h3 {
+    font-size: 20px;
+}
