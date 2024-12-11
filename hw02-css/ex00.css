@@ -13,10 +13,45 @@ h2 {
     font-size: 25px;
 }
 
-.history p {
-    text-indent: 30px;   
-}
-
 h3 {
     font-size: 20px;
 }
+
+div {
+    background-color: #D9D9D9;    
+}
+
+div > p {
+    text-indent: 30px;   
+}
+
+ul > li {
+    list-style-type: square;
+}
+ol > li {
+    list-style-type: none;
+}
+thead {
+    background-color: #C8EBFA;
+}
+td > a {
+    color: black;
+}
+
+tbody > tr:hover {
+    background-color: #EDD3ED;
+}
+td > a {
+    font-style: none;
+}
+/* td > a:link {
+    color: #FFFFFF;
+} */
+/* td > a:visited {
+    color: #FFFFFF;
+} */
+/* td > a:hover {
+    color:#0000FF;
+    text-decoration: underline; 
+
+} */
