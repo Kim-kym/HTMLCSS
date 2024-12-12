@@ -5,6 +5,53 @@
     <title>가입 폼 실습</title>
     <script>
         function validateForm() {
+            //  form 확인
+           const form = document.forms["registerForm"];
+           const username = form.username;
+           const email = form.email;
+           const password = form.password;
+           const confirm_password = form.confirm_password;
+           const favorites = form.favorite; 
+
+           if(!(username.value.length >= 3 
+                && username.value.length <= 8)) {
+                    alter("사용자 이름은 3자 이상 6자 이하입니다.");
+                    username.focus();
+                    return false; 
+                }
+                if(email.value.length < 20) {
+                    alert("이메일은 20자 이상입니다.");
+                    email.focus();
+                    return false; 
+                }
+                if(!(password.value.length >= 4 
+                    && password.value.length <=10)) {
+                    alert("비밀번호는 4자 이상 10자 이하입니다.");
+                    password.focus();
+                    return false;  
+                }
+                if(password.value !== confirm_password.value) {
+                    alert("비밀번호를 확인해 주세요.");
+                    confirm_password.focus();
+                    return false; 
+                }
+                let favoriteSeleted = false; 
+                for (let i = 0; i < favorites.length; i++) {
+                    if (favorites[i].checked) {
+                        favoriteSelected = true;
+                        break;
+                    }
+                }
+                if(!favoriteSelected) {
+                    alert("선호 음료를 최소 1개 선택해 주세요.");
+                    return false;
+                }
+                // 모든 검증 통과 
+                return true;
+        }
+    </script>
+    <script>
+        function validateForm() {
             //  form 확인 
             const form = document.forms["registerForm"];
             // const form = document.registerForm;
