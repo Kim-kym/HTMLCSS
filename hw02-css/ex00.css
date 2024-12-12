@@ -35,23 +35,34 @@ thead {
     background-color: #C8EBFA;
 }
 td > a {
-    color: black;
+    text-decoration: none;
 }
 
 tbody > tr:hover {
     background-color: #EDD3ED;
 }
-td > a {
-    font-style: none;
-}
-/* td > a:link {
+
+td > a:link {
     color: #FFFFFF;
-} */
-/* td > a:visited {
+} 
+td > a:visited {
     color: #FFFFFF;
-} */
-/* td > a:hover {
+   
+} 
+td > a:hover {
     color:#0000FF;
     text-decoration: underline; 
-
-} */
+} 
+td > a:active {
+    color:#0000FF;
+    text-decoration: underline;
+}
+td:last-child {
+    text-align: right;
+}
+td:last-child::before {
+    content: "약 ";
+}
+td:last-child::after {
+    content: " (MB/초)"
+}
